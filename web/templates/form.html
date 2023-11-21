@@ -1,0 +1,50 @@
+{% load static %}
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href='{% static "css/stilo2.css" %}' type="text/css"/>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario enviado</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="tit">
+                <img src="https://i.postimg.cc/DyQPd7FY/medCent.png" alt="" width="270px">
+                <p class="titulo">Centro medico galenos</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="tit">
+                <a class="titulo"> <i class="material-icons">home</i> Home</>
+            </div>
+            <br>
+            <div class="tit">
+                <a class="titulo"> <i class="material-icons">date_range</i> Agenda</>
+            </div>
+            <br>
+            <div class="tit">
+                <a href="{% url 'web:listaUsuarios'%}" class="titulo"> <i class="material-icons">person</i> Pacientes</>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container2">
+                <button class="boton">
+                    <a class="link" href="{% url 'web:inicio'%}">Volver al home</a></button>
+            </div>
+        </div>
+        <div class="column2">
+            <img src="https://i.postimg.cc/tTvz6JNK/img.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

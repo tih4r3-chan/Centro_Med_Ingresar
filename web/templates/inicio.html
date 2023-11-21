@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/estilo.css" %}' type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="title">Centro medico galenos</h2>
+    <div class="container" >
+        <div class="column">
+            <h1 class="text">SU SALUD EN <br >NUESTRAS MANOS</h1>
+            <div class="column">
+                <!-- <button class="boton">
+                    <a class="link" href="{% url 'web:iniciar_sesion' %}">Iniciar sesión</a>
+                </button> -->
+                <button class="boton">
+                    <a class="link" href="{% url 'web:index' %}">Crear Cuenta</a>
+                </button>
+            </div>
+        </div>
+        <div class="column">
+            <img src='https://i.postimg.cc/bNnYtbwh/centro-MEd.webp' width="450" height="450" alt="" class="img">
+        </div>
+    </div>
+</body>
+</html>

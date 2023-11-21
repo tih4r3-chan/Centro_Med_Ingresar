@@ -1,0 +1,15 @@
+<!-- web/templates/web/lista_usuarios_web.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Usuarios Web</title>
+</head>
+<body>
+    <h2>Lista de Usuarios desde la Aplicación Ingreso</h2>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario.nombre }} <br> {{ usuario.email }} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

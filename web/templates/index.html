@@ -1,0 +1,39 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href='{% static "css/stilos.css" %}' type="text/css"/>
+</head>
+<h2 class="title">Centro medico galenos</h2>
+<div class="container">
+    <h1 class="text">Registrate</h1>
+    <form action="{% url 'web:formulario' %}" method="post" class="registration-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+    
+        <div class="form-group">
+            <label for="id_nombre">Nombre:</label>
+            <input id="id_nombre" type="text" name="nombre" maxlength="100" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="id_apellido">Apellido:</label>
+            <input id="id_apellido" type="text" name="apellido" maxlength="100" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="id_email">Correo:</label>
+            <input id="id_email" type="email" name="email" maxlength="100" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="id_tipoUsuario">Tipo de usuario:</label>
+            <input id="id_tipoUsuario" type="text" name="tipoUsuario" maxlength="100" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="id_password">Contraseña:</label>
+            <input id="id_password" type="password" name="password" maxlength="100" required>
+        </div>
+    
+        <button type="submit">Registrar</button>
+    </form>
+</div>
