@@ -22,12 +22,8 @@ body{
 
 }
 .column2{
-    padding-left: 15rem;
-    margin-top: 2rem;
+    padding-left: 5rem;
     flex: 1;
-    .row{
-        text-align: center;
-    }
 }
 .titulo{
     text-align: center;
@@ -39,10 +35,12 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
 .container2{
     text-align: center;
     cursor: pointer;
 }
+
 .boton{
     padding: 10px 20px;
     font-size: 20px;
